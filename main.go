@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 )
@@ -54,6 +55,8 @@ mux:= http.NewServeMux()
 	mux.HandleFunc("GET /users", api.)
 	if err := srv.ListenAndServe(); err != nil {
 		log.Fatal(err)
+		fmt.Print("good")
+		fmt.Print("good")
 	}
 }
 //gggg
